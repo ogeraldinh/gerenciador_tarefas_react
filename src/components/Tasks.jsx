@@ -20,7 +20,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
               task.isCompleted && "bg-slate-600 line-through"
             }`}
           >
-            {task.isCompleted && <CheckIcon cla/>}
+            {task.isCompleted && <CheckIcon />}
             {task.title}
           </button>
 
@@ -30,10 +30,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
           >
             <ChevronRightIcon />
           </Button>
-          <Button
-            onClick={() => onDeleteTaskClick(task.id)}
-            variant="delete"
-          >
+          <Button onClick={() => onDeleteTaskClick(task.id)} variant="delete">
             <TrashIcon />
           </Button>
         </li>
